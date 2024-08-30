@@ -1,0 +1,118 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(Background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing:border-box;
+  position: relative;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+
+  .navbar{
+    width:100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:0px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 14px 20px;
+    display: block;
+}
+
+.dropbtn{
+    background: linear-gradient(#8495A4, #B5BDC9);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(92,28,68,0.15);
+    font-size: 100%;
+}
+
+.home{
+  background: linear-gradient(#8495A4, #B5BDC9);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(92,28,68,0.15);
+  font-size: 100%;  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: linear-gradient(#8495A4, #B5BDC9);
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(92,28,68,0.15);
+}
+
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f8f8f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content a:hover {
+    background: linear-gradient(#8495A4, #B5BDC9);
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(92,28,68,0.15);
+}
