@@ -117,3 +117,14 @@ nav ul li a{
     color: #fff;
     box-shadow: 3px 8px 22px rgba(92,28,68,0.15);
 }
+
+.home{
+    background: linear-gradient(#8495A4, #B5BDC9);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(92,28,68,0.15);
+    font-size: 100%;  
+}
