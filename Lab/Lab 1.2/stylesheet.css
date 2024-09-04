@@ -2,12 +2,13 @@ body {
   height: 100vh;
   width: 100%;
   background-image: url(Background.jpg);
-  background-position: center;
+  background-position: flex;
   background-size: cover;
   padding-left: 5%;
   padding-right: 5%;
   box-sizing:border-box;
   position: relative;
+
   }
   h1 {
     color: blue;
