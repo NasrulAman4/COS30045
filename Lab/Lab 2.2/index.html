@@ -174,7 +174,7 @@ body {
 
     <script>
         var w =500;
-        var h = 100;
+        var h = 200;
 
         var padding = 3;
 
@@ -185,7 +185,7 @@ body {
         .append("svg")
         .attr("width",w)
         .attr("height",h)
-        .attr("fill","#4f42b5");
+        .attr("fill","limegreen");
 
         svg
         .selectAll("rect")
@@ -205,6 +205,24 @@ body {
         .attr("height",function(d){
             return d*4;
         })
+
+        svg
+        .selectAll("text")
+        .data(dataset)
+        .enter()
+        .append("text")
+        .text(function(d) {
+            return d;
+        })
+        .attr("x", function(d, i) {
+            return i * (w / dataset.length) + (w / dataset.length - padding) / 2;
+        })
+        .attr("y", function(d) {
+            return h - d * 4 + 10; // 5 pixels above t
+        })
+        .attr("text-anchor", "middle")
+        .attr("font-size", "13px")
+        .attr("fill", "black");
 
     </script>
 

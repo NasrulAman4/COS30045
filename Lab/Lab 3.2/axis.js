@@ -13,6 +13,7 @@ var dataset =  [       [5, 20, 12],
 ];
 
 
+
 var scale = d3.scaleLinear()
         .domain([d3.min(dataset,function(d){
             return d[0]
@@ -35,6 +36,13 @@ var xScale = d3.scaleLinear()
     })])
     .range([padding,w-padding*2])
 
+var xAxis = d3.axisBottom()
+    .ticks(5)
+    .scale(xScale);
+
+var yAxis = d3.axisLeft()
+    .ticks(5)
+    .scale(yScale);
 
 var svg = d3
 .select("body")
@@ -55,7 +63,7 @@ svg
     return yScale(d[1]);
 })
 .attr("r",function(d){
-    return d[2];
+    return 5;
 })
 .attr("fill","slategrey");
 
@@ -73,3 +81,13 @@ svg
 .attr("y",function(d){
     return yScale(d[1]);
 });
+
+svg
+.append("g")
+.attr("transform","translate(0,"+(h-padding)+")")
+.call(xAxis);
+
+svg
+.append("g")
+.attr("transform","translate("+padding+",0)")
+.call(yAxis);
