@@ -182,7 +182,18 @@ padding: 0%;
     width: 10%;
 }
     </style>
-    <script src="navigate.js"></script>
+    <script src="navigate.js">
+          document.addEventListener("DOMContentLoaded", () => {
+    if (
+      window.location.hostname !== "localhost" &&
+      window.location.hostname !== "127.0.0.1"
+    ) {
+      const base = document.createElement("base");
+      base.href = "/COS30015/";
+      document.head.appendChild(base);
+    }
+  });
+    </script>
 </head>
 <body>
     <div class="container">

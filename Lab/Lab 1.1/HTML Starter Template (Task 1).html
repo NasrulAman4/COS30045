@@ -105,7 +105,7 @@ nav ul li a{
 }
 		
 	</style>
-<script src="../../navigate.js"></script>
+
 </head>
 
 <body>
@@ -140,7 +140,7 @@ nav ul li a{
                                 <a href="javascript:void(0)">Lab 3</a>
                                 <div class="sub-dropdown-content">
                                     <a href="../../Lab/Lab 3.1/index.html">Lab 3.1</a>
-                                    <a href="#">Lab 3.2</a>
+                                    <a href="../../Lab/Lab 3.2/index.html">Lab 3.2</a>
                                     <a href="#">Lab 3.3</a>
                                 </div>
                             </div>
@@ -170,6 +170,17 @@ nav ul li a{
 		<p>With the increase in pet ownership the AMA are encouraging policy makers to consider the needs of companion animals and their owners when considering rental, strata and body corporate regulations are well as accepting animals in public places and transport.</p>
 	<footer>COS30045 Data Visualisation<br>
 			Semester 1 2024</footer>
-
+            <script src="../../navigate.js">
+    document.addEventListener("DOMContentLoaded", () => {
+    if (
+      window.location.hostname !== "localhost" &&
+      window.location.hostname !== "127.0.0.1"
+    ) {
+      const base = document.createElement("base");
+      base.href = "/COS30015/";
+      document.head.appendChild(base);
+    }
+  });
+            </script>
 </body>
 </html>
