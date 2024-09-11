@@ -20,14 +20,7 @@ if (
   const base = document.createElement("base");
   base.href = "/COS30045/";
   document.head.appendChild(base);
-
-  // Update image sources
-  document.querySelectorAll('img').forEach(img => {
-    const originalSrc = img.getAttribute('src');
-    if (originalSrc && !originalSrc.startsWith('http')) {
-      img.setAttribute('src', base.href + originalSrc);
-    }
-  });
+;
 }
 
                 </script>
@@ -134,7 +127,7 @@ nav ul li a{
             <img src="" alt="">
             <nav>
                 <ul>
-                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="/index.html" class="home">Home</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Lab</a>
                         <div class="dropdown-content">
