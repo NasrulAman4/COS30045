@@ -1,18 +1,25 @@
-var w =500;
-var h = 150;
+//Width and Height
+var w =1000;
+var h = 300;
 
-var padding = 20;
+var padding = 60;
 
-var dataset =  [       [5, 20, 12],
-[400, 90, 22],
-[250, 20, 23],
-[300, 50, 12],
-[100, 95, 16],
-[410, 12, 12],
-[406, 44, 10],
-];
+var dataset = [
+    [2, 9],
+    [3, 5],
+    [5, 17],
+    [6, 6],
+    [6, 12],
+    [7, 20],
+    [8, 22],
+    [10, 11],
+    [5, 12],
+    [6, 16],
+  ];
 
-
+var margin = {top: 20, right: 20, bottom: 40, left: 60},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
 var scale = d3.scaleLinear()
         .domain([d3.min(dataset,function(d){
@@ -91,3 +98,20 @@ svg
 .append("g")
 .attr("transform","translate("+padding+",0)")
 .call(yAxis);
+
+//X axis label
+svg.append("text")
+    .attr("text-anchor", "middle")
+    .attr("x", w-180)
+    .attr("y", h-20)
+    .text("Tree Age (year)")
+
+
+// Y axis label:
+svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 20)
+    .attr("x", -margin.top)
+    .text("Tree Height (m)")
+    .style(fill,"black");
