@@ -114,4 +114,4 @@ svg.append("text")
     .attr("y", 20)
     .attr("x", -margin.top)
     .text("Tree Height (m)")
-    .style(fill,"black");
+    .style("fill","black");
