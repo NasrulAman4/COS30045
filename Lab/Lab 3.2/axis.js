@@ -105,6 +105,7 @@ svg.append("text")
     .attr("x", w-180)
     .attr("y", h-20)
     .text("Tree Age (year)")
+    .style("fill","black")
 
 
 // Y axis label:
